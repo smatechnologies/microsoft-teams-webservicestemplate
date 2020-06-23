@@ -1,0 +1,35 @@
+{
+  "templateid" : "MS_TEAMS_INCOMING_WEBHOOK",
+  "steps" : [ {
+    "function" : "POST",
+    "url" : "[[JI.URL]]",
+    "request" : {
+      "headers" : [ ],
+      "contentType" : "application/json",
+      "body" : "{\"text\":\"<pre>JOB: @job, failed in SCHEDULE: @schedule on @date\\nEXIT CODE: @termination</pre>\"}",
+      "fileName" : null
+    },
+    "response" : {
+      "contentType" : "application/json",
+      "variables" : [ ],
+      "ignoreResult" : false,
+      "stepCompletionCode" : 200,
+      "responseDataCheck" : null,
+      "fileName" : null
+    }
+  } ],
+  "variables" : [ {
+    "name" : "@job",
+    "value" : "??????"
+  }, {
+    "name" : "@date",
+    "value" : "??????"
+  }, {
+    "name" : "@schedule",
+    "value" : "??????"
+  }, {
+    "name" : "@termination",
+    "value" : "??????"
+  } ],
+  "properties" : [ ]
+}
