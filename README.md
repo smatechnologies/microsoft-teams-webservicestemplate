@@ -1,19 +1,21 @@
-# Project Name
-Project description
+# Microsoft Teams messages from OpCon
+This example shows how you can run a Powershell script or Web Services connector to send a message to a channel in Microsoft Teams.  The message could be information about a failed job or other pertinent alerts.
+
+# Prerequisites
+* Microsoft Teams (permissions or access to <a href='https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook'>Incoming Webhook URL</a>)
+* OpCon Release 18.3
+
+# Instructions
+There are many applications for this example but a common use case would be to send a Teams message when an OpCon job fails.  One way to set this up would be to create a trigger in Notification Manager when a job fails.  The trigger would execute a "Run Command" option and pass the necessary information about the failed job to the script/Web Services connector.
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
-# Prerequisites
-
-
-# Instructions
-
 
 # License
-Copyright 2019 SMA Technologies
+Copyright 2020 SMA Technologies
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
