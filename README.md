@@ -8,6 +8,11 @@ This example shows how you can run a Powershell script or Web Services connector
 # Instructions
 There are many applications for this example but a common use case would be to send a Teams message when an OpCon job fails.  One way to set this up would be to create a trigger in Notification Manager when a job fails.  The trigger would execute a "Run Command" option and pass the necessary information about the failed job to the script/Web Services connector.
 
+Example:
+```
+powershell.exe -ExecutionPolicy Bypass -File "C:\MSTeams.ps1" -teamsURL "https://..." -message "Hello World!"
+```
+
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
